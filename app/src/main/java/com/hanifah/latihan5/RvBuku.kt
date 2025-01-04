@@ -21,11 +21,11 @@ class RvBuku : AppCompatActivity() {
 
         //ini kita bikin array data
         val listBuku = listOf(
-            ModelBuku(title = "Buku Android Kotlin 2024", penulis = "Rizki Syaputra"),
-            ModelBuku(title = "Buku Android Kotlin2 2024", penulis = "Rizki Syaputra"),
-            ModelBuku(title = "Buku Android Kotlin3 2024", penulis = "Rizki Syaputra"),
-            ModelBuku(title = "Buku Android Kotlin4 2024", penulis = "Rizki Syaputra"),
-            ModelBuku(title = "Buku Android Kotlin5 2024", penulis = "Rizki Syaputra")
+            ModelBuku(title = "Buku Android Kotlin 2024", penulis = "NA JAEMIN"),
+            ModelBuku(title = "Buku Android Kotlin2 2024", penulis = "NA JAEMIN"),
+            ModelBuku(title = "Buku Android Kotlin3 2024", penulis = "NA JAEMIN"),
+            ModelBuku(title = "Buku Android Kotlin4 2024", penulis = "NA JAEMIN"),
+            ModelBuku(title = "Buku Android Kotlin5 2024", penulis = "NA JAEMIN")
         )
 
         val nBukuAdapter = BukuAdapter(listBuku)

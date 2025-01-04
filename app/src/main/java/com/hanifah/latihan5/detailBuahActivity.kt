@@ -1,32 +1,33 @@
 package com.hanifah.latihan5
 
-
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.hanifah.latihan5.Model.MockList
-import com.hanifah.latihan5.Model.ModelBuah
-import com.hanifah.latihan5.adapter.BuahAdapter
 
-class customImage : AppCompatActivity() {
-    private lateinit var rv_buah : RecyclerView
+class detailBuahActivity : AppCompatActivity() {
+
+    private lateinit var txtDetailBuah : TextView
+    private lateinit var imageDetailBuah : ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_custom_image)
+        setContentView(R.layout.activity_detail_buah)
 
-        rv_buah = findViewById(R.id.rv_data)
+        txtDetailBuah = findViewById(R.id.txtDetailBuah)
+        imageDetailBuah = findViewById(R.id.imageDetailBuah)
 
-        rv_buah.layoutManager = GridLayoutManager(this,1,
-            GridLayoutManager.VERTICAL,false)
+        //get data
+        val detailText = intent.getStringExtra("deskripsi")
+        val detailimage = intent.getIntExtra("image",0)
 
-        val adapter = BuahAdapter(MockList.getModel() as ArrayList<ModelBuah>,this)
-        rv_buah.adapter = adapter
+        //set data ke layout
+        txtDetailBuah.setText(detailText)
+        imageDetailBuah.setImageResource(detailimage)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

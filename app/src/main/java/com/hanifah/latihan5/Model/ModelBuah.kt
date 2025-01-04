@@ -2,7 +2,7 @@ package com.hanifah.latihan5.Model
 
 import com.hanifah.latihan5.R
 
-data class ModelBuah(
+class ModelBuah(
     val image: Int, val deskripsi : String
 )
 //array data

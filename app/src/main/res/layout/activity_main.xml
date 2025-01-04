@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EDDE5E"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#83CCBA13"
+    android:padding="40dp"
     tools:context=".MainActivity">
 
+    <!-- Title Section -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50pt"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3pt"
         android:text="Latihan 5"
-        android:textSize="34sp"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pemrograman Mobile"
-        android:textSize="18sp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:text="Pemrograman Mobile"
+        android:textSize="18sp" />
 
+    <!-- Buttons Section -->
     <Button
         android:id="@+id/btnKonversiSuhu"
         android:layout_width="match_parent"
@@ -37,52 +40,56 @@
         android:id="@+id/btnDiskon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Diskon"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:text="Diskon" />
 
     <Button
         android:id="@+id/btnLuasVolume"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Luas dan Volume"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:text="Luas dan Volume" />
 
     <Button
         android:id="@+id/btnGanjilGenap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ganjil genap"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:text="Ganjil genap" />
+
     <Button
         android:id="@+id/btnList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="List View"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:text="List View" />
+
     <Button
         android:id="@+id/btnpassing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Passing Data"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:text="Passing Data" />
+
     <Button
         android:id="@+id/btnRecycleView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Recycle View"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:text="Recycle View" />
+
     <Button
         android:id="@+id/btnBuah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Buah"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:text="Buah" />
 
     <Button
         android:id="@+id/btnMovie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Movie"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:text="Movie" />
 
 </LinearLayout>
